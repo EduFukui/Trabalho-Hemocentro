@@ -1,7 +1,4 @@
-//Menu
-
-const readline = require('readline-sync');
-
+// Menu
 function exibirMenu () {
     let opcao;
     while (true) {
@@ -27,6 +24,6 @@ function exibirMenu () {
                 break;
         }
     }
-}
+};
 
 exibirMenu();

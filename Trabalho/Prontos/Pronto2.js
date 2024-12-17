@@ -1,111 +1,139 @@
 // Buscar Doador por tipo sanguineo
-
-
 function buscarDoadorTipoAMais () {
     console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
-for (let i = 0; i < listaDeDoadores.length; i++) {
-    if (listaDeDoadores[i].tipoSanguineo === "A+") {
-    console.log(`${listaDeDoadores[i].nome} . ${listaDeDoadores[i].idade} . ${listaDeDoadores[i].peso} . ${listaDeDoadores[i].tipoSanguineo} . ${listaDeDoadores[i].dataUltimaDoacao}`);
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i].tipoSanguineo === "A+") {
+        let anoJunto = lista[i].dataAoContrario.substring(0, 4);  
+        let mesJunto = lista[i].dataAoContrario.substring(4, 6);
+        let diaJunto = lista[i].dataAoContrario.substring(6, 8);
+        let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
+    console.log(`${lista[i].nome} . ${lista[i].idade} . ${lista[i].peso} . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
-}
+};
 
 function buscarDoadorTipoBMais () {
     console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
-for (let i = 0; i < listaDeDoadores.length; i++) {
-    if (listaDeDoadores[i].tipoSanguineo === "B+") {
-    console.log(`${listaDeDoadores[i].nome} . ${listaDeDoadores[i].idade} . ${listaDeDoadores[i].peso} . ${listaDeDoadores[i].tipoSanguineo} . ${listaDeDoadores[i].dataUltimaDoacao}`);
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i].tipoSanguineo === "B+") {
+        let anoJunto = lista[i].dataAoContrario.substring(0, 4);  
+        let mesJunto = lista[i].dataAoContrario.substring(4, 6);
+        let diaJunto = lista[i].dataAoContrario.substring(6, 8);
+        let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
+    console.log(`${lista[i].nome} . ${lista[i].idade} . ${lista[i].peso} . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
-}
+};
 
 function buscarDoadorTipoABMais () {
     console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
-for (let i = 0; i < listaDeDoadores.length; i++) {
-    if (listaDeDoadores[i].tipoSanguineo === "AB+") {
-    console.log(`${listaDeDoadores[i].nome} . ${listaDeDoadores[i].idade} . ${listaDeDoadores[i].peso} . ${listaDeDoadores[i].tipoSanguineo} . ${listaDeDoadores[i].dataUltimaDoacao}`);
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i].tipoSanguineo === "AB+") {
+        let anoJunto = lista[i].dataAoContrario.substring(0, 4);  
+        let mesJunto = lista[i].dataAoContrario.substring(4, 6);
+        let diaJunto = lista[i].dataAoContrario.substring(6, 8);
+        let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
+    console.log(`${lista[i].nome} . ${lista[i].idade} . ${lista[i].peso} . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
-}
+};
 
 function buscarDoadorTipoOMais () {
     console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
-for (let i = 0; i < listaDeDoadores.length; i++) {
-    if (listaDeDoadores[i].tipoSanguineo === "O+") {
-    console.log(`${listaDeDoadores[i].nome} . ${listaDeDoadores[i].idade} . ${listaDeDoadores[i].peso} . ${listaDeDoadores[i].tipoSanguineo} . ${listaDeDoadores[i].dataUltimaDoacao}`);
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i].tipoSanguineo === "O+") {
+        let anoJunto = lista[i].dataAoContrario.substring(0, 4);  
+        let mesJunto = lista[i].dataAoContrario.substring(4, 6);
+        let diaJunto = lista[i].dataAoContrario.substring(6, 8);
+        let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
+    console.log(`${lista[i].nome} . ${lista[i].idade} . ${lista[i].peso} . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
-}
+};
 
 function buscarDoadorTipoAMenos () {
     console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
-for (let i = 0; i < listaDeDoadores.length; i++) {
-    if (listaDeDoadores[i].tipoSanguineo === "A-") {
-    console.log(`${listaDeDoadores[i].nome} . ${listaDeDoadores[i].idade} . ${listaDeDoadores[i].peso} . ${listaDeDoadores[i].tipoSanguineo} . ${listaDeDoadores[i].dataUltimaDoacao}`);
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i].tipoSanguineo === "A-") {
+        let anoJunto = lista[i].dataAoContrario.substring(0, 4);  
+        let mesJunto = lista[i].dataAoContrario.substring(4, 6);
+        let diaJunto = lista[i].dataAoContrario.substring(6, 8);
+        let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
+    console.log(`${lista[i].nome} . ${lista[i].idade} . ${lista[i].peso} . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
-}
+};
 
 function buscarDoadorTipoBMenos () {
     console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
-for (let i = 0; i < listaDeDoadores.length; i++) {
-    if (listaDeDoadores[i].tipoSanguineo === "B-") {
-    console.log(`${listaDeDoadores[i].nome} . ${listaDeDoadores[i].idade} . ${listaDeDoadores[i].peso} . ${listaDeDoadores[i].tipoSanguineo} . ${listaDeDoadores[i].dataUltimaDoacao}`);
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i].tipoSanguineo === "B-") {
+        let anoJunto = lista[i].dataAoContrario.substring(0, 4);  
+        let mesJunto = lista[i].dataAoContrario.substring(4, 6);
+        let diaJunto = lista[i].dataAoContrario.substring(6, 8);
+        let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
+    console.log(`${lista[i].nome} . ${lista[i].idade} . ${lista[i].peso} . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
-}
+};
 
 function buscarDoadorTipoABMenos () {
     console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
-for (let i = 0; i < listaDeDoadores.length; i++) {
-    if (listaDeDoadores[i].tipoSanguineo === "AB-") {
-    console.log(`${listaDeDoadores[i].nome} . ${listaDeDoadores[i].idade} . ${listaDeDoadores[i].peso} . ${listaDeDoadores[i].tipoSanguineo} . ${listaDeDoadores[i].dataUltimaDoacao}`);
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i].tipoSanguineo === "AB-") {
+        let anoJunto = lista[i].dataAoContrario.substring(0, 4);  
+        let mesJunto = lista[i].dataAoContrario.substring(4, 6);
+        let diaJunto = lista[i].dataAoContrario.substring(6, 8);
+        let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
+    console.log(`${lista[i].nome} . ${lista[i].idade} . ${lista[i].peso} . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
-}
+};
 
 function buscarDoadorTipoOMenos () {
     console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
-for (let i = 0; i < listaDeDoadores.length; i++) {
-    if (listaDeDoadores[i].tipoSanguineo === "O-") {
-    console.log(`${listaDeDoadores[i].nome} . ${listaDeDoadores[i].idade} . ${listaDeDoadores[i].peso} . ${listaDeDoadores[i].tipoSanguineo} . ${listaDeDoadores[i].dataUltimaDoacao}`);
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i].tipoSanguineo === "O-") {
+        let anoJunto = lista[i].dataAoContrario.substring(0, 4);  
+        let mesJunto = lista[i].dataAoContrario.substring(4, 6);
+        let diaJunto = lista[i].dataAoContrario.substring(6, 8);
+        let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
+    console.log(`${lista[i].nome} . ${lista[i].idade} . ${lista[i].peso} . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
-}
-
-
+};
 
 
 
@@ -147,4 +175,4 @@ function buscarDoadorTipoSangue () {
             return;
     }
 
-}
+};
