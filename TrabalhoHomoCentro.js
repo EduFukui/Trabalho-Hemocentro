@@ -1,13 +1,7 @@
 const readline = require('readline-sync');
 
-//let lista = [];
-let lista = [
-    { nome: "Joao", idade: 25, peso: 70, tipoSanguineo: "O+", dataAoContrario: "20240710" }, // 10/07/2024
-    { nome: "Maria", idade: 30, peso: 65, tipoSanguineo: "A+", dataAoContrario: "20240711" }, // 11/07/2024
-    { nome: "Pedro", idade: 28, peso: 75, tipoSanguineo: "A+", dataAoContrario: "20240709" }, // 09/07/2024
-    { nome: "Ana", idade: 22, peso: 55, tipoSanguineo: "AB-", dataAoContrario: "20240708" },  // 08/07/2024
-    { nome: "Carlos", idade: 35, peso: 80, tipoSanguineo: "O-", dataAoContrario: "20240712" } // 12/07/2024
-];
+let lista = [];
+
 
 
 
