@@ -1,7 +1,13 @@
 const readline = require('readline-sync');
 
-let lista = [];
-
+//let lista = [];
+let lista = [
+    { nome: "Joao", idade: 25, peso: 70, tipoSanguineo: "O+", dataAoContrario: "20240710" }, // 10/07/2024
+    { nome: "Maria", idade: 30, peso: 65, tipoSanguineo: "A+", dataAoContrario: "20240711" }, // 11/07/2024
+    { nome: "Pedro", idade: 28, peso: 75, tipoSanguineo: "A+", dataAoContrario: "20240709" }, // 09/07/2024
+    { nome: "Ana", idade: 22, peso: 55, tipoSanguineo: "AB-", dataAoContrario: "20240708" },  // 08/07/2024
+    { nome: "Carlos", idade: 35, peso: 80, tipoSanguineo: "O-", dataAoContrario: "20240712" } // 12/07/2024
+];
 
 
 
@@ -95,7 +101,7 @@ function listaDeDoadores () {
             let diaJunto = lista[i].dataAoContrario.substring(6, 8);
             let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
             
-            console.log(`${lista[i].nome.padEnd(21)}|   ${String(lista[i].idade).padEnd(6)}|  ${lista[i].peso}kg  |        ${lista[i].tipoSanguineo.padEnd(8)}  |      ${dataCorreta} `);
+            console.log(`${lista[i].nome.padEnd(21)}|   ${String(lista[i].idade).padEnd(6)}|  ${lista[i].peso}kg  |        ${lista[i].tipoSanguineo.padEnd(8)}  |    ${dataCorreta} `);
         }
     console.log("-----------------------------------------------------------------------------")
 }
@@ -106,7 +112,7 @@ function listaDeDoadores () {
 
 // Buscar Doador por tipo sanguineo
 function buscarDoadorTipoAMais () {
-    console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
+    console.log("\n\n\n-------------------------   RESULTADO DA BUSCA:   -------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
@@ -116,14 +122,14 @@ for (let i = 0; i < lista.length; i++) {
         let mesJunto = lista[i].dataAoContrario.substring(4, 6);
         let diaJunto = lista[i].dataAoContrario.substring(6, 8);
         let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
-    console.log(`${lista[i].nome.padEnd(18)} . ${lista[i].idade} . ${lista[i].peso}kg . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
+    console.log(`${lista[i].nome.padEnd(21)}|   ${String(lista[i].idade).padEnd(5)} |  ${lista[i].peso}kg  |        ${lista[i].tipoSanguineo.padEnd(9)} |    ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
 };
 
 function buscarDoadorTipoBMais () {
-    console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
+    console.log("\n-------------------------   LISTAGEM DE DOADORES:   -------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
@@ -133,14 +139,14 @@ for (let i = 0; i < lista.length; i++) {
         let mesJunto = lista[i].dataAoContrario.substring(4, 6);
         let diaJunto = lista[i].dataAoContrario.substring(6, 8);
         let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
-    console.log(`${lista[i].nome.padEnd(18)} . ${lista[i].idade} . ${lista[i].peso}kg . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
+    console.log(`${lista[i].nome.padEnd(21)}|   ${String(lista[i].idade).padEnd(5)} |  ${lista[i].peso}kg  |        ${lista[i].tipoSanguineo.padEnd(9)} |    ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
 };
 
 function buscarDoadorTipoABMais () {
-    console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
+    console.log("\n-------------------------   LISTAGEM DE DOADORES:   ------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
@@ -150,14 +156,14 @@ for (let i = 0; i < lista.length; i++) {
         let mesJunto = lista[i].dataAoContrario.substring(4, 6);
         let diaJunto = lista[i].dataAoContrario.substring(6, 8);
         let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
-    console.log(`${lista[i].nome.padEnd(18)} . ${lista[i].idade} . ${lista[i].peso}kg . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
+    console.log(`${lista[i].nome.padEnd(21)}|   ${String(lista[i].idade).padEnd(5)} |  ${lista[i].peso}kg  |        ${lista[i].tipoSanguineo.padEnd(9)} |    ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
 };
 
 function buscarDoadorTipoOMais () {
-    console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
+    console.log("\n-------------------------   LISTAGEM DE DOADORES:   ------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
@@ -167,14 +173,14 @@ for (let i = 0; i < lista.length; i++) {
         let mesJunto = lista[i].dataAoContrario.substring(4, 6);
         let diaJunto = lista[i].dataAoContrario.substring(6, 8);
         let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
-    console.log(`${lista[i].nome.padEnd(18)} . ${lista[i].idade} . ${lista[i].peso}kg . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
+    console.log(`${lista[i].nome.padEnd(21)}|   ${String(lista[i].idade).padEnd(5)} |  ${lista[i].peso}kg  |        ${lista[i].tipoSanguineo.padEnd(9)} |    ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
 };
 
 function buscarDoadorTipoAMenos () {
-    console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
+    console.log("\n-------------------------   LISTAGEM DE DOADORES:   ------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
@@ -184,14 +190,14 @@ for (let i = 0; i < lista.length; i++) {
         let mesJunto = lista[i].dataAoContrario.substring(4, 6);
         let diaJunto = lista[i].dataAoContrario.substring(6, 8);
         let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
-    console.log(`${lista[i].nome.padEnd(18)} . ${lista[i].idade} . ${lista[i].peso}kg . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
+    console.log(`${lista[i].nome.padEnd(21)}|   ${String(lista[i].idade).padEnd(5)} |  ${lista[i].peso}kg  |        ${lista[i].tipoSanguineo.padEnd(9)} |    ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
 };
 
 function buscarDoadorTipoBMenos () {
-    console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
+    console.log("\n-------------------------   LISTAGEM DE DOADORES:   ------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
@@ -201,14 +207,14 @@ for (let i = 0; i < lista.length; i++) {
         let mesJunto = lista[i].dataAoContrario.substring(4, 6);
         let diaJunto = lista[i].dataAoContrario.substring(6, 8);
         let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
-    console.log(`${lista[i].nome.padEnd(18)} . ${lista[i].idade} . ${lista[i].peso}kg . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
+    console.log(`${lista[i].nome.padEnd(21)}|   ${String(lista[i].idade).padEnd(5)} |  ${lista[i].peso}kg  |        ${lista[i].tipoSanguineo.padEnd(9)} |    ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
 };
 
 function buscarDoadorTipoABMenos () {
-    console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
+    console.log("\n-------------------------   LISTAGEM DE DOADORES:   ------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
@@ -218,14 +224,14 @@ for (let i = 0; i < lista.length; i++) {
         let mesJunto = lista[i].dataAoContrario.substring(4, 6);
         let diaJunto = lista[i].dataAoContrario.substring(6, 8);
         let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
-    console.log(`${lista[i].nome.padEnd(18)} . ${lista[i].idade} . ${lista[i].peso}kg . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
+    console.log(`${lista[i].nome.padEnd(21)}|   ${String(lista[i].idade).padEnd(5)} |  ${lista[i].peso}kg  |        ${lista[i].tipoSanguineo.padEnd(9)} |    ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
 };
 
 function buscarDoadorTipoOMenos () {
-    console.log("\n\n\n------------------------\nRESULTADO DA BUSCA: \n----------------------------------------------------------------------------")
+    console.log("\n-------------------------   LISTAGEM DE DOADORES:   ------------------------")
     console.log("NOME                 |  IDADE  |  PESO  |  TIPO SANGUINEO  |  ULTIMA DOAÇÃO")
     
 
@@ -235,7 +241,7 @@ for (let i = 0; i < lista.length; i++) {
         let mesJunto = lista[i].dataAoContrario.substring(4, 6);
         let diaJunto = lista[i].dataAoContrario.substring(6, 8);
         let dataCorreta = diaJunto + "/" + mesJunto + "/" + anoJunto;
-    console.log(`${lista[i].nome.padEnd(18)} . ${lista[i].idade} . ${lista[i].peso}kg . ${lista[i].tipoSanguineo} . ${dataCorreta}`);
+    console.log(`${lista[i].nome.padEnd(21)}|   ${String(lista[i].idade).padEnd(5)} |  ${lista[i].peso}kg  |        ${lista[i].tipoSanguineo.padEnd(9)} |    ${dataCorreta}`);
     }
 }
 console.log("----------------------------------------------------------------------------")
@@ -313,7 +319,7 @@ function buscarDoadorDataDoacao() {
                 let diaJunto = lista[i].dataAoContrario.substring(6, 8);
                 let dataCorreta = `${diaJunto}/${mesJunto}/${anoJunto}`;
                 
-                console.log(`${lista[i].nome.padEnd(18)}|    ${String(lista[i].idade).padEnd(4)} |   ${String(lista[i].peso)}kg |        ${lista[i].tipoSanguineo.padEnd(10)}|    ${dataCorreta}`);
+                console.log(`${lista[i].nome.padEnd(18)}|   ${String(lista[i].idade).padEnd(5)} |  ${String(lista[i].peso)}kg  |        ${lista[i].tipoSanguineo.padEnd(10)}|    ${dataCorreta}`);
                 doadoresEncontrados++;
             }
         }
